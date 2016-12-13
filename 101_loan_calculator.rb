@@ -7,7 +7,7 @@ loop do
 
   loop do
     puts "How much would you like to borrow?"
-    principal = gets.chomp
+    principal = gets.chomp.to_i
 
     break if principal > 0
     puts "That's not a valid number. Please try again"
